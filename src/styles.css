@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+  background-color: rgb(231, 231, 231);
+}

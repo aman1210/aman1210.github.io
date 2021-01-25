@@ -1,0 +1,13 @@
+.intro {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  width: 100vw;
+  height: 80vw;
+  background: url("../../assets/Layer 1.png") no-repeat;
+  z-index: 1000;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
