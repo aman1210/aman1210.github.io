@@ -7,9 +7,17 @@ import { ParallaxDirective } from './parallax.directive';
 import { IntroComponent } from './intro/intro.component';
 import { AppBarComponent } from './app-bar/app-bar.component';
 import { FooterComponent } from './footer/footer.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
-  declarations: [AppComponent, ParallaxDirective, IntroComponent, AppBarComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    ParallaxDirective,
+    IntroComponent,
+    AppBarComponent,
+    FooterComponent,
+    SkillsComponent,
+  ],
   imports: [BrowserModule, InfiniteTypeDeleteModule],
   providers: [],
   bootstrap: [AppComponent],

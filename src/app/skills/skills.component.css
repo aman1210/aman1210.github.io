@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Cool infinite background scrolling animation. * Twitter: @kootoopas */
+/* Exo thin font from Google. */
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+.body {
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  /* margin-top: 13.5rem; */
+  color: #999;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("../../assets/circle-blues.png") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 10s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 10s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 10s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 10s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.heading {
+  padding-top: 8%;
+  margin: auto auto;
+  color: white;
+  text-align: center;
+  /* left: 50%; */
+}
+.container {
+  width: 60vw;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 0;
+}
+.spacer {
+  height: 30px;
+}
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.tool-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tool {
+  display: inline-block;
+  margin: 40px 20px 0;
+  text-align: center;
+}
+.icon_name {
+  color: #91a1b1;
+  margin-top: 7px;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+  color: rgb(173, 173, 173);
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .container {
+    padding: 30px;
+  }
+}

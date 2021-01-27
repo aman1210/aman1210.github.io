@@ -1,0 +1,20 @@
+<div class="body">
+  <div class="heading">
+    <div class="container">
+      <h1>SKILLS</h1>
+      <div class="spacer"></div>
+      <h3>
+        Below are some of the skills I've picked up on my journey to become a
+        full-stack developer. My core strengths currently are Flutter and
+        Angular.
+      </h3>
+      <div class="spacer"></div>
+      <div class="tool-container">
+        <div class="tool" *ngFor="let i of Tools">
+          <img src="{{ i.image }}" height="50px" class="icon" />
+          <p class="icon_name">{{ i.name }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
