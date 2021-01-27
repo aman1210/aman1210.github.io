@@ -14,9 +14,8 @@ export class AppBarComponent implements OnInit {
   ngOnInit(): void {}
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    console.log('hello');
     const newPos = window.pageYOffset;
-    if (this.prevScrollpos > newPos) {
+    if (newPos < 100) {
       document.querySelector('.navbar').classList.remove('down');
     } else {
       document.querySelector('.navbar').classList.add('down');

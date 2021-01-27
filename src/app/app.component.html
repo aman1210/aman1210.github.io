@@ -1,5 +1,7 @@
 <app-app-bar></app-app-bar>
+<!-- Wrapper for bubbles -->
 <div class="wrapper">
+  <!-- Main Intro Start -->
   <div class="container">
     <div class="row">
       <div class="col-md-6 main">
@@ -8,13 +10,14 @@
         <div>
           <ngx-sbz-type-delete
             [textColor]="['white']"
+            [fontSize]="['1.5em']"
             [typingSpeedMilliseconds]="100"
             [deleteSpeedMilliseconds]="100"
             [wordArray]="[
-              'Flutter Developer          ',
-              'MEAN Stack Developer         ',
-              'UI/UX Desginer             ',
-              'Programmer          '
+              'Flutter Developer🚀          ',
+              'MEAN Stack Developer🌐         ',
+              'UI/UX Desginer🎨             ',
+              'Programmer👨‍💻          '
             ]"
           >
           </ngx-sbz-type-delete>
@@ -25,7 +28,9 @@
       </div>
     </div>
   </div>
+  <!-- Main Intro Ends -->
 
+  <!-- Bubbles start -->
   <ul class="bg-bubbles">
     <li></li>
     <li></li>
@@ -48,5 +53,7 @@
     <li></li>
     <li></li>
   </ul>
+  <!-- Bubbles End -->
 </div>
 <app-intro></app-intro>
+<app-footer></app-footer>
