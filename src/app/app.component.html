@@ -1,6 +1,52 @@
-<div id="full-screen">
-  <img src="../assets/build1.png" id="img1" appParallax [ratio]="-0.1" />
-  <img src="../assets/build2.png" id="img2" appParallax [ratio]="-0.3" />
-  <img src="../assets/build3.png" id="img3" appParallax [ratio]="-0.5" />
+<app-app-bar></app-app-bar>
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 main">
+        <h3>Hi There</h3>
+        <h1>I'm <span>Aman Srivastava</span></h1>
+        <div>
+          <ngx-sbz-type-delete
+            [textColor]="['white']"
+            [typingSpeedMilliseconds]="100"
+            [deleteSpeedMilliseconds]="100"
+            [wordArray]="[
+              'Flutter Developer          ',
+              'MEAN Stack Developer         ',
+              'UI/UX Desginer             ',
+              'Programmer          '
+            ]"
+          >
+          </ngx-sbz-type-delete>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="../assets/hero.svg" />
+      </div>
+    </div>
+  </div>
+
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
 </div>
 <app-intro></app-intro>
