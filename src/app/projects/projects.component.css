@@ -87,7 +87,7 @@ p {
 .links {
   display: flex;
   float: left;
-  padding: 3rem;
+  padding: 2rem;
   padding-left: 0;
 
   /* margin-top: 50px; */

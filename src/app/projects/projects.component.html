@@ -19,16 +19,14 @@
             <p>{{ i.description }}</p>
             <p><strong>Technologies used:</strong> {{ i.technologies_used }}</p>
             <div class="links">
-              <div class="link-container">
-                <a href="{{ i.github }}" target="__blank"
-                  ><img src="../../assets/github.png" height="25px"
-                /></a>
-              </div>
-              <div class="link-container" *ngIf="i.demo != null">
-                <a href="{{ i.demo }}" target="__blank"
-                  ><img src="../../assets/link.png" height="25px"
-                /></a>
-              </div>
+              <a href="{{ i.github }}" target="__blank"
+                ><div class="link-container">
+                  <img src="../../assets/github.png" height="25px" /></div
+              ></a>
+              <a href="{{ i.demo }}" target="__blank"
+                ><div class="link-container" *ngIf="i.demo != null">
+                  <img src="../../assets/link.png" height="25px" /></div
+              ></a>
             </div>
           </div>
         </div>
