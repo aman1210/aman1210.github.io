@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="heading">
+        <h2>Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6" *ngFor="let i of projects">
+        <div
+          class="p-container"
+          (mouseenter)="show($event.target)"
+          (mouseleave)="hide($event.target)"
+        >
+          <img src="{{ i.image }}" alt="{{ i.name }}" class="project-img" />
+          <div class="card-content">
+            <h4>{{ i.name }}</h4>
+            <h5>{{ i.platform }}</h5>
+            <p>{{ i.description }}</p>
+            <p><strong>Technologies used:</strong> {{ i.technologies_used }}</p>
+            <div class="links">
+              <div class="link-container">
+                <a href="{{ i.github }}" target="__blank"
+                  ><img src="../../assets/github.png" height="25px"
+                /></a>
+              </div>
+              <div class="link-container" *ngIf="i.demo != null">
+                <a href="{{ i.demo }}" target="__blank"
+                  ><img src="../../assets/link.png" height="25px"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
