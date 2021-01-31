@@ -11,6 +11,8 @@ import { AppBarComponent } from './app-bar/app-bar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ScrollService } from './scroll.service';
+import { AppRoute } from './app-route.module';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,13 @@ import { ProjectsComponent } from './projects/projects.component';
     SkillsComponent,
     ProjectsComponent,
   ],
-  imports: [BrowserModule, InfiniteTypeDeleteModule, NgScrollbarModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    InfiniteTypeDeleteModule,
+    NgScrollbarModule,
+    AppRoute,
+  ],
+  providers: [ScrollService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

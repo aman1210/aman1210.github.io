@@ -1,7 +1,7 @@
-<ng-scrollbar class="my-scrollbar">
-  <app-app-bar></app-app-bar>
+<app-app-bar></app-app-bar>
+<ng-scrollbar class="my-scrollbar" [position]="['invertY']">
   <!-- Wrapper for bubbles -->
-  <div class="wrapper">
+  <div class="wrapper" id="home">
     <!-- Main Intro Start -->
     <div class="container">
       <div class="row">
@@ -45,10 +45,16 @@
       <li></li>
     </ul>
     <!-- Bubbles End -->
-    <div class="scroll-top" (click)="top()">&#8593;</div>
   </div>
   <app-intro></app-intro>
   <app-skills></app-skills>
   <app-projects></app-projects>
   <app-footer></app-footer>
 </ng-scrollbar>
+<div
+  class="scroll-top"
+  *ngIf="scrollToIcon$ | async as icon"
+  (click)="scrollToEdge(icon)"
+>
+  &#8593;
+</div>

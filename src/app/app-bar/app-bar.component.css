@@ -1,5 +1,6 @@
 nav.navbar {
   /* color: rgb(22, 9, 134); */
+  margin-left: 10px;
   visibility: visible;
   position: fixed;
   top: 0px;
@@ -21,18 +22,15 @@ nav.navbar.down {
   margin-bottom: 10px;
   padding: 10px 20px;
 }
-@media only screen and (max-width: 600px) {
-  nav.navbar {
-    padding: 20px 30px;
-  }
-  nav.navbar.down {
-    padding: 10px 30px;
-  }
-}
 
 .navbar-expand-lg .navbar-toggler {
+  z-index: 10000;
   color: #fff;
-  display: inline-block;
+  display: none;
+}
+
+.navbar-toggler {
+  display: none;
 }
 
 .navbar-toggler-icon {
@@ -46,4 +44,104 @@ nav.navbar.down {
 
 #logo span {
   color: #fd3c5b;
+}
+
+.nav-link {
+  cursor: pointer;
+  margin-right: 20px;
+  font-weight: 300;
+  font-size: 24px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.options {
+  display: flex;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  z-index: 1000;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.options a {
+  cursor: pointer;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.options a:hover {
+  color: #f1f1f1;
+}
+
+@media only screen and (max-width: 1000px) {
+  nav.navbar {
+    padding: 20px 30px;
+  }
+  nav.navbar.down {
+    padding: 10px 30px;
+  }
+  #navbarNav {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-toggler {
+    color: #fff;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .options {
+    padding-top: 15px;
+  }
+  .options a {
+    font-size: 18px;
+  }
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
 }
