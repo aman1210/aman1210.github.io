@@ -7,3 +7,51 @@
   color: #fff;
   font-size: 0.8rem;
 }
+p {
+  display: block;
+}
+.contact-details {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contact-container {
+  cursor: pointer;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border: 1.5px solid white;
+  text-align: center;
+  border-radius: 5px;
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  background-color: white;
+  color: rgb(0, 0, 73);
+  transition: 0.5s;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-icon i {
+  font-size: 20px;
+}
+.contact-info a {
+  margin-left: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  -webkit-tap-highlight-color: transparent;
+}
