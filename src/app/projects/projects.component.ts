@@ -16,7 +16,8 @@ export class ProjectsComponent implements OnInit {
       'An interactive app to manage personal expenses.',
       'Flutter and Android Studio',
       'https://github.com/aman1210/FlutterExpenseTracker',
-      'https://play.google.com/store/apps/details?id=com.souleater.expenseTracker'
+      'https://play.google.com/store/apps/details?id=com.souleater.expenseTracker',
+      
     ),
     new Project(
       'SoulMusic',
@@ -25,6 +26,7 @@ export class ProjectsComponent implements OnInit {
       'A simple music streaming web app.',
       'Angular, NodeJS, Express and MongoDB',
       'https://github.com/aman1210/MusicProject',
+      null,
       'https://musicmean-4a1d1.web.app/'
     ),
     new Project(

@@ -23,6 +23,11 @@
                 ><div class="link-container">
                   <img src="./assets/github.png" height="25px" /></div
               ></a>
+              <a href="{{i.playstore}}" target="_blank">
+                <div class="link-container" *ngIf="i.playstore != null">
+                  <img src="./assets/google-play.png" height="25px">
+                </div>
+              </a>
               <a href="{{ i.demo }}" target="__blank"
                 ><div class="link-container" *ngIf="i.demo != null">
                   <img src="./assets/link.png" height="25px" /></div

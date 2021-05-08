@@ -5,6 +5,7 @@ export class Project {
   description: String;
   technologies_used: String;
   github: String;
+  playstore: String;
   demo: String;
 
   constructor(
@@ -14,6 +15,7 @@ export class Project {
     description: String,
     technologies_used: String,
     github: String,
+    playstore?:String,
     demo?: String
   ) {
     this.name = name;
@@ -22,6 +24,7 @@ export class Project {
     this.description = description;
     this.technologies_used = technologies_used;
     this.github = github;
+    this.playstore = playstore;
     this.demo = demo;
   }
 }
