@@ -26,15 +26,15 @@ export class SkillsComponent implements OnInit {
       name: 'Angular',
     },
     {
-      image: '../../assets/nodejs.png',
+      image: './assets/nodejs.png',
       name: 'NodeJS',
     },
     {
-      image: '../../assets/mongo.png',
+      image: './assets/mongo.png',
       name: 'MongoDB',
     },
     {
-      image: '../../assets/express.png',
+      image: './assets/express.png',
       name: 'Express',
     },
     {

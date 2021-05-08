@@ -11,7 +11,7 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     new Project(
       'Expense Manager',
-      '../../assets/p1.jpg',
+      './assets/p1.jpg',
       'Android',
       'An interactive app to manage personal expenses.',
       'Flutter and Android Studio',
@@ -20,15 +20,16 @@ export class ProjectsComponent implements OnInit {
     ),
     new Project(
       'SoulMusic',
-      '../../assets/p2.jpg',
+      './assets/p2.jpg',
       'Web app',
       'A simple music streaming web app.',
       'Angular, NodeJS, Express and MongoDB',
-      'https://github.com/aman1210/MusicProject'
+      'https://github.com/aman1210/MusicProject',
+      'https://musicmean-4a1d1.web.app/'
     ),
     new Project(
       'Wallpaper',
-      '../../assets/p3.jpg',
+      './assets/p3.jpg',
       'Android app',
       'A clean wallpaper app.',
       'Flutter',
@@ -36,7 +37,7 @@ export class ProjectsComponent implements OnInit {
     ),
     new Project(
       'App UI Ideas',
-      '../../assets/p4.jpg',
+      './assets/p4.jpg',
       'Android app',
       'Some UI ideas for app.',
       'Flutter',
