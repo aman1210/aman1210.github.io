@@ -1,15 +1,25 @@
 .intro {
+  display: table;
   padding: 100px 20px;
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100vw;
   max-width: 100%;
   background-color: rgb(0, 0, 94);
   color: #fff;
   text-align: center;
 }
+.container{
+  display: table-cell;
+  vertical-align: middle;
+}
 .col-md-7 {
   padding: 0 40px;
   text-align: start;
+  display: table;
+}
+.main{
+  display: table-cell;
+  vertical-align: middle;
 }
 .col-md-7 h1 {
   font-size: 3.5rem;
